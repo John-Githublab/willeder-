@@ -3,11 +3,22 @@
   flex-direction: column;
 }
 .flex-direction-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row {
+  display: flex;
   flex-direction: row;
 }
 .center {
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .text-center {
   text-align: center;
@@ -27,10 +38,111 @@
   line-height: 160%; /* 32px */
   letter-spacing: 6px;
 }
+.main-title {
+  color: #fff;
+  text-align: center;
+  font-family: Revalia;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171%; /* 61.56px */
+  letter-spacing: 17.28px;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+
+  /* Ja/20px-Medium */
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 32px */
+  letter-spacing: 6px;
+}
+.heading2 {
+  color: #000;
+  text-align: center;
+
+  /* Ja/20px-Medium */
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 32px */
+  letter-spacing: 6px;
+}
+.content {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+
+  /* Ja/14px-Regular */
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.7px;
+}
+.content2 {
+  color: #fff;
+  text-align: center;
+
+  /* Ja/14px-Regular */
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.7px;
+}
+.content__title {
+  color: #6a45ff;
+  text-align: center;
+
+  /* Ja/24px-Medium */
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: 7.2px;
+}
+.subheading {
+  color: #fff;
+  text-align: center;
+
+  /* Ja/16px-Medium */
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 4.8px;
+}
 .gap-1 {
   gap: 3.99px;
 }
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
 .align-center {
   align-items: center;
-  
+}
+.h-100 {
+  height: 100%;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.color-white {
+  color: white;
 }

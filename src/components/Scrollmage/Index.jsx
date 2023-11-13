@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import "./styles.scss";
 
-function Slideshow({ attachment, style, className, delayed }) {
-  const delay = delayed || 6500;
+function Slideshow({ attachment, style, className, delayed, children }) {
+  const delay = delayed || 9500;
   const [index, setIndex] = React.useState(0);
   const timeoutRef = React.useRef(null);
 
@@ -33,19 +33,32 @@ function Slideshow({ attachment, style, className, delayed }) {
         className="slideshowSlider"
         style={{
           height: "100%",
-          transform: `translate3d(${-index * 100}%, 0, 0)`,
+          // transform: `translate3d(${-index * 100}%, 0, 0)`,
         }}
       >
         {attachment?.length > 0 &&
           attachment?.map((value, index) => (
-            <div className="slide" key={index}>
-              <img
-                src={value?.url}
+            <div
+              className="slide"
+              key={index}
+              style={{
+                width: "100vw",
+                height: "100vh",
+                backgroundRepeat: "no-repeat",
+                background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 26.56%, rgba(0, 0, 0, 0.75) 71.35%), url(${value}), lightgray 50% / cover no-repeat`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {children}
+              {/* <img
+                src={value}
                 style={{
-                  objectFit: "cover",
-                  height: "100%",
+                  objectFit: "stretch",
+                  // height: "100%",
+                  width: "100%",
                 }}
-              />
+              /> */}
             </div>
           ))}
       </div>
