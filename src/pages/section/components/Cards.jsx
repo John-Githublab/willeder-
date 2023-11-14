@@ -1,12 +1,20 @@
 import React from "react";
 
-const Cards = () => {
+const Cards = ({ attachment, title, content }) => {
   return (
-    <div className="flex section__cards">
-      <p className="heading2 color-white">Lorem ipsum dolor sit</p>
-      <p className="content2 color-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    <div
+      className="flex section__cards"
+      style={{
+        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(${attachment}), lightgray 50% / cover no-repeat`,
+        backgroundSize: "cover",
+        zIndex: 4,
+        position: "relative",
+      }}
+    >
+      <p className="heading2 color-white" style={{ padding: "0 24px" }}>
+        {title}
       </p>
+      <p className="content2 color-white">{content}</p>
     </div>
   );
 };
