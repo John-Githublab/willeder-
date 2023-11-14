@@ -27,6 +27,7 @@ const Details = () => {
         </p>
       </div>
       <div
+        onClick={() => window.scrollTo(0, 600)}
         className="flex hero__scrollcontent"
         style={{ whiteSpace: "break-spaces" }}
       >

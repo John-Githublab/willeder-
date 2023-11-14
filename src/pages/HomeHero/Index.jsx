@@ -5,17 +5,16 @@ import Details from "./components/Details.component";
 import "./styles.scss";
 
 const imageArray = [
-  //   images.banner1,
-  //   images.banner2,
   images.banner3,
-  //   images.banner3,
-
-  //   images.banner4,
+  images.banner1,
+  images.banner2,
+  images.banner3,
+  images.banner4,
 ];
 
 const HomeHero = () => {
   return (
-    <div className="flex" style={{ height: "100vh", width: "100vw" }}>
+    <div className="flex" style={{ height: "100vh" }}>
       <Slideshow attachment={imageArray}>
         <Details />
       </Slideshow>

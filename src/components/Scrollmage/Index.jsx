@@ -33,7 +33,7 @@ function Slideshow({ attachment, style, className, delayed, children }) {
         className="slideshowSlider"
         style={{
           height: "100%",
-          // transform: `translate3d(${-index * 100}%, 0, 0)`,
+          transform: `translate3d(${-index * 100}%, 0, 0)`,
         }}
       >
         {attachment?.length > 0 &&
