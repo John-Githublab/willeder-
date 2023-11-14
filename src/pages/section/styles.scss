@@ -8,8 +8,14 @@
   left: 45%;
   background: rgba(106, 69, 255, 0.24);
   height: 100%;
+  z-index: 3;
 }
+.section__content {
+  z-index: 6;
+}
+
 .section__cards {
+  width: 100%;
   height: 256px;
   padding: 40px 32px;
   flex-direction: column;
@@ -17,4 +23,95 @@
   align-items: center;
   gap: 24px;
   align-self: stretch;
+}
+.section__container {
+  margin: 0 35px;
+  gap: 24px;
+}
+.content__root {
+  background: #dce1e6;
+  padding-right: 64px;
+}
+.horizontal {
+  height: 4px;
+  width: 100%;
+  background-color: #6a45ff;
+  position: relative;
+  top: -2px;
+}
+.content__image {
+  // height: 200px;
+  width: 100%;
+  z-index: 4;
+  position: relative;
+}
+.content__arrow {
+  width: 40px;
+  height: 40px;
+}
+.section__last {
+  padding-left: 16px;
+}
+.section__hidden {
+  display: none;
+}
+@media (min-width: 800px) {
+  .section__layer::after {
+    width: 280px !important;
+    background: #6a45ff;
+    left: 40%;
+  }
+  .section__container {
+    flex-direction: row !important;
+    gap: 0 !important;
+    margin: 0;
+  }
+  .section__content {
+    color: white !important;
+  }
+  .content__root {
+    flex-direction: row !important;
+    display: flex !important;
+    gap: 120px !important;
+    align-items: center;
+    justify-content: space-around !important;
+    padding: 0 305px;
+    padding-right: 220px !important;
+  }
+  .content__image {
+    // width: 325px !important;
+    // height: 440px !important;
+    margin-top: 200px !important;
+    margin-bottom: 200px !important;
+    // margin-left: 305px !important;
+  }
+  .section__horizontal {
+    display: none !important;
+  }
+  .content__heading {
+    display: none !important;
+  }
+  .section__new {
+    position: relative !important;
+    z-index: 8 !important;
+  }
+  .section__content3 {
+    text-align: left !important;
+    font-size: 16px !important;
+    padding-left: 0 !important;
+  }
+  .section__last {
+    padding-left: 0 !important;
+  }
+  .section__hidden {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .horizontal {
+    height: 8px !important;
+  }
+  .section__heading {
+    padding: 0 !important;
+    font-size: 32px !important;
+  }
 }

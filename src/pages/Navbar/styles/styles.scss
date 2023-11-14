@@ -8,5 +8,20 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
+}
+.navbar__menu {
+  display: none !important;
+}
+@media (min-width: 800px) {
+  .menubar {
+    display: none;
+  }
+  .nav__padding {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+  .navbar__menu {
+    display: flex !important;
+  }
 }
