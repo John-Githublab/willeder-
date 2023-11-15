@@ -19,11 +19,14 @@
     transform: scale(1);
   }
 }
+.box__small {
+  border-width: 40px !important;
+}
 @media (min-width: 800px) {
-  .box {
-    border: 100px solid !important;
-    border-color: #8bff54 #e9ff60 #ff5252 #6587ff !important;
+  .box__small {
+    border-width: 50px !important;
   }
+
   .box__main {
     margin-top: 200px !important;
     margin-bottom: 200px !important;

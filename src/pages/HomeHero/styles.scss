@@ -1,11 +1,11 @@
 .hero__mainheading {
-  margin-top: 45px;
   text-align: center;
   padding: 32px 40px;
+  padding-top: 40px;
 }
 .hero__maincontent {
   text-align: center;
-  padding: 32px 35px;
+  padding: 0px 35px;
   text-align: center;
 }
 .hero__scrollcontent {
@@ -22,6 +22,8 @@
 @media (min-width: 800px) {
   .hero__mainheading {
     background: #6a45ff;
+    margin: 64px 0;
+    margin-bottom: 29px;
     padding: 0 !important;
     width: 100%;
   }
@@ -51,8 +53,8 @@
     letter-spacing: 6px;
   }
   .hero__maincontent {
-    padding-left: 264px;
-    padding-right: 264px;
+    padding-left: 210px;
+    padding-right: 210px;
   }
   .content__hidden {
     display: inline-block !important;
@@ -69,5 +71,8 @@
     line-height: 160%; /* 51.2px */
     letter-spacing: 9.6px;
     text-shadow: none !important;
+  }
+  .hero__scrollcontent {
+    margin-top: 64px;
   }
 }

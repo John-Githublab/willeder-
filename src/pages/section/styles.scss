@@ -133,6 +133,9 @@
     line-height: 160%; /* 64px */
     letter-spacing: 12px;
   }
+  .content__new {
+    font-size: 16px !important;
+  }
   .conent__heading {
     font-family: Noto Sans;
     font-size: 24px !important;
@@ -141,4 +144,10 @@
     line-height: 160%; /* 38.4px */
     letter-spacing: 7.2px;
   }
+  // .heading__content {
+  //   font-size: 32px !important;
+  // }
+  // .heading__content2 {
+  //   font-size: 20px !important;
+  // }
 }

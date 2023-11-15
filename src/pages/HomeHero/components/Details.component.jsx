@@ -21,7 +21,7 @@ const Details = () => {
       >
         <p className="content ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor <span className="content__hidden"> </span>incididunt ut
+          eiusmod tempor <span className="content__hidden"> incididunt</span> ut
           labore et dolore magna aliqua.
         </p>
       </div>

@@ -11,11 +11,16 @@ const Cards = ({ attachment, title, content, id }) => {
         position: "relative",
       }}
     >
-      <p className="section__hidden color-white content__title">{id}</p>
-      <p className="heading2 color-white" style={{ padding: "0 24px" }}>
+      <p className="section__hidden color-white content__title content__new">
+        {id}
+      </p>
+      <p
+        className="heading2 color-white heading__content"
+        style={{ padding: "0 24px" }}
+      >
         {title}
       </p>
-      <p className="content2 color-white">{content}</p>
+      <p className="content2 color-white heading__content2">{content}</p>
     </div>
   );
 };

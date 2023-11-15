@@ -13,9 +13,9 @@ import LoadingCover from "./components/Loading/LoadingCover";
 function App() {
   return (
     <>
-      {/* <LoadingCover>
-        <Box />
-      </LoadingCover> */}
+      <LoadingCover>
+        <Box borderWidth={70} className="box__small" />
+      </LoadingCover>
       <Navbar />
       <HomeHero />
       <Section />

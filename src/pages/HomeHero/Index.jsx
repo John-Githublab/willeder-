@@ -4,6 +4,8 @@ import Slideshow from "../../components/Scrollmage/Index";
 import Details from "./components/Details.component";
 import "./styles.scss";
 import useAsyncImage from "../../hooks/useImageOptimise";
+import LoadingCover from "../../components/Loading/LoadingCover";
+import Box from "../../components/Logo/Box";
 
 const imageArray = [
   images.banner3,
@@ -22,7 +24,7 @@ const HomeHero = () => {
   if (!src1) return;
   return (
     <div className="flex" style={{ height: "100vh" }} id="home">
-      <Slideshow attachment={[src2, src1, src3]}>
+      <Slideshow attachment={[src2, src1, src4]}>
         <Details />
       </Slideshow>
     </div>
