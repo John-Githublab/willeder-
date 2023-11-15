@@ -12,13 +12,19 @@ const Navbar = () => {
       <div className="flex center w-100 navbar__menu">
         <ul className="flex flex-row gap-120">
           <li>
-            <p className="subheading color-black">Home</p>
+            <p className="subheading color-black">
+              <a href="#home">Home</a>
+            </p>
           </li>
           <li>
-            <p className="subheading color-black">Page 1</p>
+            <p className="subheading color-black">
+              <a href="#page1">Page 1</a>
+            </p>
           </li>
           <li>
-            <p className="subheading color-black">Page 2</p>
+            <p className="subheading color-black">
+              <a href="#page2">Page 2</a>
+            </p>
           </li>
         </ul>
       </div>

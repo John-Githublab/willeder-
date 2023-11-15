@@ -5,7 +5,7 @@ import FooterIcons from "./components/FooterIcons";
 
 const Footer = () => {
   return (
-    <div className="flex footer__root center">
+    <div className="flex footer__root center" id="page2">
       <FooterLinks />
       <div className="footer__horizontal--line flex" />
       <FooterIcons />

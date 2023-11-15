@@ -1,7 +1,8 @@
-import banner1 from "./assets/images/ASS 1.png";
-import banner2 from "./assets/images/ASS2.png";
-import banner3 from "./assets/images/ASS3.png";
-import banner4 from "./assets/images/ASS4.png";
+import banner1 from "./assets/images/1.svg";
+import banner2 from "./assets/images/2.svg";
+import banner3 from "./assets/images/3.svg";
+import banner4 from "./assets/images/4.svg";
+import banner5 from "./assets/images/ASS4.png";
 import logo from "./assets/images/Union.png";
 import arrowIcon from "./assets/images/solar_arrow-up-linear.png";
 import fb from "./assets/images/fb.png";
@@ -20,4 +21,5 @@ export const images = {
   twitter,
   insta,
   tiktok,
+  banner5,
 };

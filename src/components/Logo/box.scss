@@ -1,0 +1,31 @@
+.box {
+  border: 50px solid;
+  border-color: #8bff54 #e9ff60 #ff5252 #6587ff;
+  transform: rotateZ(0deg) scale(1);
+  animation: boxAnimation 6s linear infinite;
+}
+
+@keyframes boxAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(360deg);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 800px) {
+  .box {
+    border: 100px solid !important;
+    border-color: #8bff54 #e9ff60 #ff5252 #6587ff !important;
+  }
+  .box__main {
+    margin-top: 200px !important;
+    margin-bottom: 200px !important;
+  }
+}

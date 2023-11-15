@@ -13,7 +13,7 @@ const Content = () => {
       <div className="horizontal section__horizontal" />
       <div className="flex">
         <img
-          src={images.banner4}
+          src={images.banner5}
           alt="banner"
           className="content__image mt-32"
         />

@@ -12,10 +12,8 @@ const Details = () => {
         />
         <h1 className="main-title">LOGO</h1>
       </div>
-      <div className="hero__mainheading">
-        <h2 className="heading ">
-          Lorem ipsum dolor <br /> sit amet
-        </h2>
+      <div className="hero__mainheading" style={{ whiteSpace: "break-spaces" }}>
+        <h2 className="heading home__heading">Lorem ipsum dolor sit amet</h2>
       </div>
       <div
         className="flex hero__maincontent"
@@ -23,7 +21,8 @@ const Details = () => {
       >
         <p className="content ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor ut labore et dolore magna aliqua.
+          eiusmod tempor <span className="content__hidden"> </span>incididunt ut
+          labore et dolore magna aliqua.
         </p>
       </div>
       <div

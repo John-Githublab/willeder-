@@ -55,12 +55,14 @@
 .section__hidden {
   display: none;
 }
+
 @media (min-width: 800px) {
   .section__layer::after {
     width: 280px !important;
     background: #6a45ff;
     left: 40%;
   }
+
   .section__container {
     flex-direction: row !important;
     gap: 0 !important;
@@ -113,5 +115,30 @@
   .section__heading {
     padding: 0 !important;
     font-size: 32px !important;
+  }
+  .section__cards {
+    padding: 159px 95.48px;
+  }
+  .content__root {
+    margin-top: 200px !important;
+  }
+  .section__content--main {
+    margin-top: 100px !important;
+  }
+  .content__title {
+    font-family: Noto Sans;
+    font-size: 40px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 64px */
+    letter-spacing: 12px;
+  }
+  .conent__heading {
+    font-family: Noto Sans;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 7.2px;
   }
 }

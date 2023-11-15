@@ -1,4 +1,4 @@
-import "./box.css";
+import "./box.scss";
 import React from "react";
 function Box({
   rightColor = null,
@@ -19,7 +19,7 @@ function Box({
     }),
   };
   return (
-    <div className="flex mt-80 mb-80 center">
+    <div className="flex mt-80 mb-80 center box__main">
       <div className="box" style={styles}></div>
     </div>
   );

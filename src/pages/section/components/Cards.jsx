@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cards = ({ attachment, title, content }) => {
+const Cards = ({ attachment, title, content, id }) => {
   return (
     <div
       className="flex section__cards"
@@ -11,6 +11,7 @@ const Cards = ({ attachment, title, content }) => {
         position: "relative",
       }}
     >
+      <p className="section__hidden color-white content__title">{id}</p>
       <p className="heading2 color-white" style={{ padding: "0 24px" }}>
         {title}
       </p>

@@ -7,10 +7,15 @@ import HomeHero from "./pages/HomeHero/Index";
 import Section from "./pages/section/Index";
 import Box from "./components/Logo/Box";
 import Footer from "./pages/Footer/Index";
+import { images } from "./image";
+import LoadingCover from "./components/Loading/LoadingCover";
 
 function App() {
   return (
     <>
+      {/* <LoadingCover>
+        <Box />
+      </LoadingCover> */}
       <Navbar />
       <HomeHero />
       <Section />
